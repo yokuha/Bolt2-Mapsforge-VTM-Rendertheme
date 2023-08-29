@@ -32,13 +32,13 @@
 	<!-- Non-paved tracks -->
 	<style-line id="roam-track-raw" cat="roam" width="1.0"/>
 	<style-line id="bolt2-track-raw" cat="bolt2" stroke="#555555" width="1.1" dasharray="3,3"/>
-	
+
 	<style-line id="roam-track-raw-cycle" use="roam-track-raw" stroke="#000000"/>
 	<style-line id="bolt2-track-raw-cycle" cat="bolt2" stroke="#555555" width="1.1" dasharray="6,3"/>
 	<!-- Tracks that don't have other info -->
 	<style-line id="roam-track-other" cat="roam" stroke="#000000" width="1.0" dasharray="10,10"/>
 	<style-line id="bolt2-track-other" cat="bolt2" stroke="#555555" width="1.1" dasharray="5,5"/>
-	
+
 	<style-line id="roam-track-other-cycle" use="roam-track-other" stroke="#00FF00"/>
 	<style-line id="bolt2-track-other-cycle" use="bolt2-track-other" stroke="#00AA00"/>
 	<!-- Paved Cycleways-->
@@ -107,7 +107,7 @@
 		<!-- the outline of bridges -->
 		<outline-layer id="bridge" stroke="#000000" width="1"/>
 		<outline-layer id="bridge_small" stroke="#666666" width="0.6"/>
-				
+
 		<!-- area:highway=pedestrian -->
 		<m e="way" k="area" v="yes">
 			<m e="way" k="highway" v="pedestrian" zoom-min="12" stroke-linecap="butt">
@@ -115,7 +115,7 @@
 				<area fill="#FFFFFF" />
 			</m>
 		</m>
-		
+
 		<m e="way" k="area" v="~|no|false">
 			<!-- region paths & tracks -->
 			<m k="access" v="private" zoom-min="16">
@@ -323,7 +323,7 @@
 				</m>
 			</m>
 			<!-- endregion -->
-			
+
 			<!-- region bridges -->
 			<m k="bridge" v="yes|true">
 				<m e="way" k="highway" v="bridleway" zoom-min="12">
@@ -416,31 +416,31 @@
 	<m zoom-min="14">
 		<m k="amenity">
 			<m v="fuel">
-				<symbol cat="bolt2" src="icons/fuel.svg"/>
-				<symbol cat="roam" src="icons/fuel_8color.svg"/>
+				<symbol cat="bolt2" src="icons/fuel.svg" symbol-percent="150"/>
+				<symbol cat="roam" src="icons/fuel_8color.svg" symbol-percent="150"/>
 			</m>
 			<m v="cafe" zoom-min="15">
-				<symbol cat="bolt2" src="icons/cafe.svg"/>
-				<symbol cat="roam" src="icons/cafe_8color.svg"/>
+				<symbol cat="bolt2" src="icons/cafe.svg" symbol-percent="150"/>
+				<symbol cat="roam" src="icons/cafe_8color.svg" symbol-percent="150"/>
 			</m>
 			<m v="drinking_water">
-				<symbol cat="bolt2" src="icons/drinking_water.svg"/>
-				<symbol cat="roam" src="icons/drinking_water_8color.svg"/>
+				<symbol cat="bolt2" src="icons/drinking_water.svg" symbol-percent="150"/>
+				<symbol cat="roam" src="icons/drinking_water_8color.svg" symbol-percent="150"/>
 			</m>
 		</m>
 		<m k="shop">
 			<m v="bakery">
-				<symbol cat="bolt2" src="icons/bakery.svg"/>
-				<symbol cat="roam" src="icons/bakery_8color.svg"/>
+				<symbol cat="bolt2" src="icons/bakery.svg" symbol-percent="150"/>
+				<symbol cat="roam" src="icons/bakery_8color.svg" symbol-percent="150"/>
 			</m>
 			<m v="bicycle">
-				<symbol cat="bolt2" src="icons/shop_bicycle.svg" symbol-percent="130"/>
-				<symbol cat="roam" src="icons/shop_bicycle_8color.svg" symbol-percent="130"/>
+				<symbol cat="bolt2" src="icons/shop_bicycle.svg" symbol-percent="200"/>
+				<symbol cat="roam" src="icons/shop_bicycle_8color.svg" symbol-percent="200"/>
 			</m>
 		</m>
 	</m>
 	<m k="railway" v="station" zoom-min="13">
-		<symbol cat="bolt2" src="icons/train_station.svg" symbol-percent="130"/>
-		<symbol cat="roam" src="icons/train_station_8color.svg" symbol-percent="130"/>
+		<symbol cat="bolt2" src="icons/train_station.svg" symbol-percent="150"/>
+		<symbol cat="roam" src="icons/train_station_8color.svg" symbol-percent="150"/>
 	</m>
 </rendertheme>
